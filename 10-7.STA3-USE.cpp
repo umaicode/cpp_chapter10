@@ -15,44 +15,44 @@
 #include <string>
 using namespace std;
 
-void main(){
-    //int형 stack의 정의
-    Stack <int> intStack;
-    //intStack.Push(n); 가능한지 확인? 가능하게 하려면 필요한 code는?
-    intStack.Push(50);
-    intStack.Push(19);
-    intStack.Push(3);
-    intStack.Push(10);
-    intStack.Push('aa');//입력 가능
-    //stack에서 하나씩 꺼내면서 값을 출력한다.
-    cout<<"-----int type stack"<<endl;
-    while(! intStack.Empty()){
-        cout<< intStack.Pop() << endl;
-    }
-    //double stack의정의
-    Stack <double> doubleStack;
-    //stack에 값을 추가한다.
-    doubleStack.Push(500.8);
-    doubleStack.Push(1992.8);
-    doubleStack.Push(33.8);
-    doubleStack.Push(1024.8);
-    //stack에서 하나씩 꺼내면서 값을 출력한다.
-    cout<<"-----double type stack"<<endl;
-    while(! doubleStack.Empty()){
-        cout<< doubleStack.Pop() << endl;
-    }
-    //String stack의정의
-    Stack <string> stringStack;
+void main() {
+	//int형 stack의 정의
+	Stack <int> intStack;
+	//intStack.Push(n); 가능한지 확인? 가능하게 하려면 필요한 code는?
+	intStack.Push(50);
+	intStack.Push(19);
+	intStack.Push(3);
+	intStack.Push(10);
+	intStack.Push('aa');//입력 가능
+	//stack에서 하나씩 꺼내면서 값을 출력한다.
+	cout << "-----int type stack" << endl;
+	while (!intStack.Empty()) {
+		cout << intStack.Pop() << endl;
+	}
+	//double stack의정의
+	Stack <double> doubleStack;
+	//stack에 값을 추가한다.
+	doubleStack.Push(500.8);
+	doubleStack.Push(1992.8);
+	doubleStack.Push(33.8);
+	doubleStack.Push(1024.8);
+	//stack에서 하나씩 꺼내면서 값을 출력한다.
+	cout << "-----double type stack" << endl;
+	while (!doubleStack.Empty()) {
+		cout << doubleStack.Pop() << endl;
+	}
+	//String stack의정의
+	Stack <string> stringStack;
 
-    stringStack.Push("500");
-    stringStack.Push("1992");
-    stringStack.Push("33");
-    stringStack.Push("1024");
-    stringStack.Push(50);//다른 타입에 대하여 push 실행 여부를 실습
-    //stack에서 하나씩 꺼내면서 값을 출력한다.
-    cout<<"-----string type stack"<<endl;
-    while(! stringStack.Empty()){
-        cout << stringStack.Pop() << endl;
-    }
+	stringStack.Push("500");
+	stringStack.Push("1992");
+	stringStack.Push("33");
+	stringStack.Push("1024");
+	stringStack.Push(50);//다른 타입에 대하여 push 실행 여부를 실습
+	//stack에서 하나씩 꺼내면서 값을 출력한다.
+	cout << "-----string type stack" << endl;
+	while (!stringStack.Empty()) {
+		cout << stringStack.Pop() << endl;
+	}
 	system("pause");
 }
